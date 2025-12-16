@@ -1,0 +1,81 @@
+/* ================================================= */
+/* 1. ESTILOS BASE (MÓVIL PRIMERO: 0px a 599px)    */
+/* Los estilos aquí se aplican a TODOS los dispositivos, */
+/* pero se optimizan para las pantallas más pequeñas.   */
+/* ================================================= */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f3f4; /* GRIS CLARO (Móvil) */
+    color: #333;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em; /* Tamaño de fuente grande para móvil */
+    color: #e74c3c;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column; /* Disposición en una sola columna (Móvil) */
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================= */
+/* 2. PROGRESIÓN (Tablet: 600px y más)               */
+/* Añadimos estilos solo para PANTALLAS MÁS GRANDES. */
+/* ================================================= */
+@media screen and (min-width: 600px) {
+    
+    /* CAMBIO DE COLOR Y TAMAÑO DE TEXTO */
+    body {
+        background-color: #d6eaf8; /* AZUL PÁLIDO (Tablet) */
+    }
+
+    header h1 {
+        font-size: 2.2em; /* Incrementamos ligeramente el tamaño */
+    }
+    
+    /* CAMBIO DE DISPOSICIÓN: 2 Columnas */
+    .content-section {
+        flex-direction: row; /* Las tarjetas se alinean en fila */
+    }
+    
+    .card {
+        flex: 1; /* Permite que ambas tarjetas ocupen el mismo ancho */
+    }
+}
+
+/* ================================================= */
+/* 3. PROGRESIÓN (Escritorio: 1024px y más)          */
+/* Añadimos estilos para las pantallas más grandes.  */
+/* ================================================= */
+@media screen and (min-width: 1024px) {
+    
+    /* CAMBIO DE COLOR Y TAMAÑO DE TEXTO */
+    body {
+        background-color: #e8f8f5; /* VERDE PÁLIDO (Escritorio) */
+    }
+    
+    header h1 {
+        font-size: 2.6em; /* Aumentamos el tamaño de nuevo */
+        color: #27ae60;
+    }
+    
+    /* AJUSTE DE MARGENES Y RELLENOS */
+    main {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,94 @@
+/* ================================================= */
+/* 1. ESTILOS BASE (ESCRITORIO PRIMERO: 992px y más) */
+/* Estos estilos son la configuración POR DEFECTO. */
+/* ================================================= */
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #a9cce3; /* AZUL CLARO (Escritorio) */
+    color: #1c2833;
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Disposición para Escritorio: 3 Columnas */
+.content-section {
+    display: flex;
+    flex-direction: row; /* Tres columnas en fila es el valor por defecto */
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1200px; /* Límite de ancho para escritorio */
+}
+
+.card {
+    padding: 25px;
+    border-radius: 6px;
+    background-color: white;
+    flex: 1; /* Las 3 tarjetas comparten el espacio equitativamente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================= */
+/* 2. REGRESIÓN (Tablet: Menos de 992px)             */
+/* Usamos max-width para SIMPLIFICAR el diseño. */
+/* ------------------------------------------------- */
+@media screen and (max-width: 991px) {
+    
+    body {
+        background-color: #f7dc6f; /* AMARILLO PÁLIDO (Tablet) */
+    }
+
+    /* Simplificación de Disposición: 2 Columnas */
+    .content-section {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        /* Hacemos que dos tarjetas quepan por fila (aproximadamente la mitad del ancho) */
+        width: calc(50% - 10px); 
+        margin-bottom: 20px; /* Añadimos espacio entre las filas de tarjetas */
+    }
+
+    /* Ocultar la tercera tarjeta para simplificar aún más (Opcional) */
+    #card-z {
+        display: none;
+    }
+}
+
+
+/* ================================================= */
+/* 3. REGRESIÓN FINAL (Móvil: Menos de 599px)        */
+/* Simplificación máxima para el tamaño más pequeño. */
+/* ------------------------------------------------- */
+@media screen and (max-width: 599px) {
+    
+    body {
+        background-color: #f0f3f4; /* GRIS CLARO (Móvil) */
+    }
+
+    /* Simplificación de Disposición: 1 Columna (Apiladas) */
+    .content-section {
+        flex-direction: column; /* Sobrescribimos la fila para volver a la columna */
+        gap: 10px;
+    }
+    
+    .card {
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 15px;
+        box-shadow: none; /* Quitamos la sombra para aligerar */
+    }
+    
+    /* Mostrar solo la tarjeta A, para máxima simplificación */
+    #card-x {
+        display: block; 
+    }
+    #card-y {
+        display: none;
+    }
+}

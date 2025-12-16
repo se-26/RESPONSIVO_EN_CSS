@@ -1,0 +1,60 @@
+/* ======================================= */
+/* 1. ESTILOS BASE (MÓVIL - Hasta 599px)  */
+/* ======================================= */
+body {
+  font-family: Arial, sans-serif;
+  /* Fuente base para dispositivos pequeños */
+  font-size: 16px;
+  padding: 20px;
+}
+
+h1 {
+  /* Fuente para H1 en dispositivos pequeños */
+  font-size: 2.5em; /* Equivalente a 40px (2.5 * 16px) */
+  color: rgb(0, 0, 0);
+}
+
+p {
+  /* Fuente para párrafos en dispositivos pequeños */
+  font-size: 1em; /* Equivalente a 16px */
+}
+
+/* ======================================= */
+/* 2. MEDIA QUERY (TABLET - 600px o más)  */
+/* ======================================= */
+@media (min-width: 600px) {
+  /* Aumentamos el tamaño base de la fuente */
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    /* Se ajusta basado en el nuevo tamaño del body (2.5 * 18px = 45px) */
+    font-size: 2.5em;
+  }
+
+  p {
+    /* (1 * 18px = 18px) */
+    font-size: 1em;
+  }
+}
+
+/* ============================================ */
+/* 3. MEDIA QUERY (ESCRITORIO - 1024px o más)   */
+/* ============================================ */
+@media (min-width: 1024px) {
+  /* Aumentamos el tamaño base de la fuente para pantallas grandes */
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    /* Se ajusta basado en el nuevo tamaño del body (3.5 * 20px = 60px) */
+    font-size: 3.5em;
+  }
+
+  p {
+    /* (1 * 20px = 20px) */
+    font-size: 1em;
+  }
+}

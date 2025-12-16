@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Estilos para el Contenedor Principal (Por defecto, en columna para móvil) */
+.contenedor-principal {
+  display: flex;
+  flex-direction: column; /* Apilados verticalmente por defecto */
+  padding: 20px;
+  gap: 20px; /* Espacio entre el menú y el contenido */
+}
+
+/* Estilos del Menú (Aseguramos que los ítems estén en columna para móvil) */
+.menu ul {
+  width: fit-content;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; /* Los ítems del menú van en columna */
+  background-color: #97b0f5;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(38, 0, 253);
+  border-bottom: 1px solid #000000;
+}
+
+/* .menu li:last-child a {
+  border-bottom: none;
+} */
+
+/* Estilos del Contenido */
+.contenido {
+  background-color: #eb7f7f;
+  padding: 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 700px) {
+  .menu ul {
+    width: fit-content;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Los ítems del menú van en columna */
+    background-color: #97b0f5;
+  }
+}

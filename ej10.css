@@ -1,0 +1,46 @@
+/* Estilos del Formulario General */
+.formulario-responsivo {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos de Grupo de Campos (Comportamiento Móvil: Columna) */
+.campo-grupo {
+    display: flex;
+    flex-direction: column; /* Por defecto: apilados verticalmente (Label sobre Input) */
+    margin-bottom: 15px;
+}
+
+.campo-grupo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo-grupo input, 
+.campo-grupo select, 
+.campo-grupo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ocupan todo el ancho en móvil */
+}
+
+/* Estilo especial para el campo de mensaje (ocupa el 100% siempre) */
+.campo-mensaje {
+    /* No hay cambios, se mantiene en columna */
+}
+
+/* Estilos del Botón */
+.boton-enviar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Botón de ancho completo en móvil */
+}

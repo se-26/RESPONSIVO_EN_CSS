@@ -1,0 +1,103 @@
+@media print {
+  /* ¡Aquí van tus estilos de impresión! */
+}
+/*
+ * Estos estilos SÓLO se aplicarán cuando el usuario intente imprimir la página
+ */
+@media print {
+
+    /* ================================= */
+    /* 1. Visibilidad: Ocultar Elementos */
+    /* ================================= */
+    
+    /* Oculta elementos que son inútiles en papel */
+    header,
+    nav,        /* Menús y navegación */
+    footer,
+    aside,      /* Barras laterales */
+    .btn-imprimir, /* Botones */
+    .anuncios,     /* Publicidad */
+    .barra-busqueda,
+    form {
+        display: none !important;
+    }
+
+    /* Mostrar URL después de los enlaces (Opcional) */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+    }
+    /* Ocultar la URL para enlaces de navegación o JavaScript */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+
+    /* ================================= */
+    /* 2. Tipografía y Diseño de Página  */
+    /* ================================= */
+
+    /* Forzar un color de fondo blanco para ahorrar tinta */
+    body {
+        background-color: #cc0000 !important;
+        color: #000 !important;
+        margin: 0;
+        padding: 0;
+        box-shadow: none !important;
+    }
+    
+    /* Configurar una fuente simple y legible (como Serif) */
+    body, p, td, li {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        /* Usar 'pt' (puntos) en lugar de 'px' para impresión */
+        font-size: 12pt; 
+    }
+
+    h1 {
+        font-size: 20pt;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+    
+    /* El contenido principal debe ocupar todo el ancho */
+    .contenedor-principal {
+        width: 100% !important;
+        float: none !important;
+        padding: 0 !important;
+    }
+
+    /* Evitar que las imágenes y videos se vean mal o desperdicien tinta */
+    img, video {
+        max-width: 100% !important;
+        /* Opcional: convertir imágenes a escala de grises */
+        filter: grayscale(100%);
+    }
+    
+    /* ================================= */
+    /* 3. Evitar Cortes de Contenido    */
+    /* ================================= */
+
+    /* Asegurar que las filas de tablas o los bloques de texto no se corten */
+    tr, pre, blockquote, ul, ol, li {
+        /* Evita que el contenido de un bloque se divida entre páginas */
+        page-break-inside: avoid; 
+    }
+
+    /* Forzar un salto de página después de títulos principales */
+    h1, h2 {
+        /* Evita que el título quede al final de una página sin su contenido */
+        page-break-after: avoid; 
+    }
+    
+    /* Configuración especial para tablas (quitar colores) */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px solid #000;
+        background-color: #7416c0be !important;
+    }
+}
