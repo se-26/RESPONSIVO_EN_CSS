@@ -1,0 +1,82 @@
+
+/* ================================================= */
+/* 1. ESTILOS BASE (MÓVIL - Mobile First)            */
+/* ================================================= */
+
+/* Definición de la unidad base (1rem = 16px) */
+html {
+    /* Base para Mobile First */
+    font-size: 16px; 
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* El tamaño de la fuente del H1 será 2.5 * 16px = 40px */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+/* El padding del encabezado será 1.5 * 16px = 24px */
+.encabezado {
+    background-color: #640064;
+    color: rgb(237, 169, 169);
+    padding: 1.5rem 0; 
+    text-align: center;
+}
+
+
+/* ================================================= */
+/* 2. MEDIA QUERY (TABLET / ESCRITORIO PEQUEÑO)      */
+/* ================================================= */
+
+@media (min-width: 768px) {
+    /* Aumentamos la base de escalamiento (1rem = 18px) */
+    html {
+        font-size: 18px; 
+    }
+
+    /* Nota: Todos los elementos definidos con REM se escalan automáticamente:
+       - h1 ahora es 2.5 * 18px = 45px
+       - .encabezado padding ahora es 1.5 * 18px = 27px
+       - .bloque width ahora es 10 * 18px = 180px
+    */
+}
+
+
+/* ================================================= */
+/* 3. MEDIA QUERY (ESCRITORIO GRANDE)                */
+/* ================================================= */
+
+@media (min-width: 1200px) {
+    /* Aumentamos la base de escalamiento para pantallas grandes (1rem = 20px) */
+    html {
+        font-size: 20px; 
+    }
+
+    /* Nota: Todos los elementos con REM se escalan de nuevo:
+       - h1 ahora es 2.5 * 20px = 50px
+       - .encabezado padding ahora es 1.5 * 20px = 30px
+       - .bloque width ahora es 10 * 20px = 200px
+    */
+}
+@media screen and (max-width: 1200px) {
+    .container_rem_em {
+        font-size: 1.7em;
+    }
+    .container_rem_em p {
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .container_rem_em h2 {
+        font-size: 1.3em;
+    }
+
+    .container_rem_em p {
+        font-size: 1.5rem;
+    }
+}
