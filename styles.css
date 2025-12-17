@@ -6,6 +6,42 @@
 /* ==========================================
    VARIABLES CSS
    ========================================== */
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 80px; /* ajusta si tu barra es más alta */
+  padding: 0 30px;
+}
+
+/* LISTA DEL MENÚ CENTRADA */
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* LINKS */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* ICONOS A LA DERECHA */
+.nav-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
 :root {
     /* Colores Principales */
     --primary-color: #FF6B6B;
@@ -29,8 +65,8 @@
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --spacing-xxl: 4rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
     
     /* Tipografía */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
