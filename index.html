@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnimeStore - Tu tienda online de productos anime, manga y merchandising oficial">
+    <title>AnimeStore - Tu Tienda de Anime Favorita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER CON NAVEGACIÓN -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎌</span>
+                <span class="logo-text">AnimeStore</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorías</a></li>
+                    <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="icon-link" aria-label="Buscar">🔍</a>
+                    <a href="#" class="icon-link" aria-label="Carrito">🛒</a>
+                    <a href="#" class="icon-link" aria-label="Usuario">👤</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">Descubre el Mejor Anime y Manga</h1>
+            <p class="hero-subtitle">
+                Merchandising oficial, figuras exclusivas y los últimos lanzamientos. 
+                Envío gratis en compras superiores a $50.000
+            </p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#ofertas" class="btn btn-secondary">Ofertas Especiales</a>
+            </div>
+            <div class="hero-badge">
+                <span class="badge">🔥 Nuevos productos cada semana</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS DESTACADAS -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2 class="section-title">Explora por Categorías</h2>
+            <p class="section-subtitle">Encuentra exactamente lo que buscas</p>
+            
+            <div class="categories-grid">
+                <article class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">Manga</h3>
+                    <p class="category-description">Más de 5,000 títulos disponibles</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+                
+                <article class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3 class="category-title">Videojuegos</h3>
+                    <p class="category-description">Últimos lanzamientos y clásicos</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+                
+                <article class="category-card">
+                    <div class="category-icon">🗿</div>
+                    <h3 class="category-title">Figuras</h3>
+                    <p class="category-description">Coleccionables premium y exclusivos</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+                
+                <article class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3 class="category-title">Ropa</h3>
+                    <p class="category-description">Diseños oficiales y limitados</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+                
+                <article class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3 class="category-title">Arte</h3>
+                    <p class="category-description">Posters, prints y artbooks</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+                
+                <article class="category-card">
+                    <div class="category-icon">🎁</div>
+                    <h3 class="category-title">Accesorios</h3>
+                    <p class="category-description">Llaveros, pins y más</p>
+                    <a href="#" class="category-link">Explorar →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Los más vendidos de la temporada</p>
+            
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-image">🎯</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Figura Naruto Uzumaki</h3>
+                        <p class="product-description">Edición limitada 25cm</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$89.990</span>
+                            <span class="price-new">$69.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-badge hot">Hot</div>
+                    <div class="product-image">⚔️</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Manga Attack on Titan Vol. 1-34</h3>
+                        <p class="product-description">Colección completa</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(892)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-new">$299.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-badge">-30%</div>
+                    <div class="product-image">🔥</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Akatsuki</h3>
+                        <p class="product-description">100% algodón premium</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span>(234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$39.990</span>
+                            <span class="price-new">$27.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-image">🎮</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dragon Ball FighterZ</h3>
+                        <p class="product-description">PS5 / Xbox / PC</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(1,245)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-new">$149.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-image">🌸</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Figura Sakura Card Captor</h3>
+                        <p class="product-description">Edición 25 aniversario</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-new">$79.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-badge">-25%</div>
+                    <div class="product-image">🗡️</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Réplica Espada de Tanjiro</h3>
+                        <p class="product-description">Demon Slayer - 100cm</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span>(456)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$119.990</span>
+                            <span class="price-new">$89.990</span>
+                        </div>
+                        <button class="btn btn-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTAS ESPECIALES -->
+    <section class="deals" id="ofertas">
+        <div class="container">
+            <h2 class="section-title">Ofertas Especiales</h2>
+            <p class="section-subtitle">Aprovecha estos descuentos por tiempo limitado</p>
+            
+            <div class="deals-grid">
+                <article class="deal-card deal-large">
+                    <div class="deal-content">
+                        <span class="deal-badge">Oferta Flash</span>
+                        <h3 class="deal-title">Black Friday Anime</h3>
+                        <p class="deal-description">Hasta 50% de descuento en productos seleccionados</p>
+                        <div class="deal-timer">
+                            <div class="timer-item">
+                                <span class="timer-value">23</span>
+                                <span class="timer-label">Horas</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-value">45</span>
+                                <span class="timer-label">Min</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-value">12</span>
+                                <span class="timer-label">Seg</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Ver Ofertas</a>
+                    </div>
+                </article>
+                
+                <article class="deal-card">
+                    <span class="deal-badge">Nuevo</span>
+                    <h3 class="deal-title">Mangas 3x2</h3>
+                    <p class="deal-description">En toda la colección Shonen Jump</p>
+                    <a href="#" class="btn btn-secondary">Comprar Ahora</a>
+                </article>
+                
+                <article class="deal-card">
+                    <span class="deal-badge">Popular</span>
+                    <h3 class="deal-title">Envío Gratis</h3>
+                    <p class="deal-description">En compras sobre $50.000</p>
+                    <a href="#" class="btn btn-secondary">Ver Más</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <p class="section-subtitle">Miles de otakus satisfechos</p>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "La mejor tienda de anime en Colombia. Productos originales, 
+                        precios justos y el envío llegó súper rápido. ¡100% recomendado!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">😊</div>
+                        <div class="author-info">
+                            <p class="author-name">Lucia Florez</p>
+                            <p class="author-detail">Cliente verificada</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Compré varias figuras y todas llegaron en perfecto estado, 
+                        muy bien empacadas. El servicio al cliente es excelente."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🤓</div>
+                        <div class="author-info">
+                            <p class="author-name">David Guillermo</p>
+                            <p class="author-detail">Cliente verificado</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Excelente variedad de mangas. Encontré series que llevaba 
+                        años buscando. Los precios son muy competitivos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">😄</div>
+                        <div class="author-info">
+                            <p class="author-name">Pamela Galvan</p>
+                            <p class="author-detail">Cliente verificada</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">¡Únete a Nuestra Comunidad!</h2>
+                <p class="newsletter-subtitle">
+                    Recibe ofertas exclusivas, noticias de anime y lanzamientos antes que nadie
+                </p>
+                <form class="newsletter-form">
+                    <input 
+                        type="email" 
+                        class="newsletter-input" 
+                        placeholder="Tu correo electrónico"
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+                <p class="newsletter-privacy">
+                    🔒 Tu información está segura. No spam, lo prometemos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="logo-icon">🎌</span> AnimeStore
+                    </h3>
+                    <p class="footer-description">
+                        Tu tienda online de confianza para productos de anime, 
+                        manga y merchandising oficial desde 2020.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Tienda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Manga</a></li>
+                        <li><a href="#">Figuras</a></li>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Ayuda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Envíos y Entregas</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Soporte</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>📧 info@animestore.com</li>
+                        <li>📱 +57 300 123 4567</li>
+                        <li>📍 Bucaramanga, Colombia</li>
+                        <li>🕐 Lun - Vie: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 AnimeStore. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Términos y Condiciones</a>
+                    <span>|</span>
+                    <a href="#">Política de Privacidad</a>
+                    <span>|</span>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        ⬆️
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
