@@ -1,0 +1,76 @@
+/* ===================================== */
+/* ESTILOS GLOBALES                      */
+/* ===================================== */
+style
+        /* Estilos básicos para que las imágenes se vean (simulación) */
+        .item-galeria {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+        .item-galeria img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    style
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff5722; /* Naranja de Dragon Ball */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===================================== */
+/* 1. ESTILOS BASE (MÓVIL - 1 COLUMNA)   */
+/* ===================================== */
+
+.galeria {
+    display: grid;
+    
+    /* DEFINICIÓN MÓVIL: Una sola columna (1fr = 100% del ancho) */
+    grid-template-columns: repeat(1, 1fr); 
+    
+    gap: 15px; /* Espacio entre las imágenes */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.item-galeria {
+    /* Asegurar que las imágenes llenen el espacio sin desbordarse */
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================== */
+/* 2. MEDIA QUERY (TABLET - 2 COLUMNAS)  */
+/* ===================================== */
+
+@media (min-width: 600px) {
+    .galeria {
+        /* DEFINICIÓN TABLET: Dos columnas de igual ancho (1fr) */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================================== */
+/* 3. MEDIA QUERY (ESCRITORIO - 3 COLUMNAS) */
+/* ===================================== */
+
+@media (min-width: 1024px) {
+    .galeria {
+        /* DEFINICIÓN ESCRITORIO: Tres columnas de igual ancho (1fr) */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
